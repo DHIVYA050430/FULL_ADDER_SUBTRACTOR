@@ -57,37 +57,26 @@ Write the detailed procedure here
 
 /* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by:DIVYA E RegisterNumber:212223230050
 */
+```
 //full adder
-
 module fulladd(sum,cout,a,b,cin);
-
    output sum;
-   
 	output cout;
- 
 	input a;
- 
 	input b;
- 
 	input cin;
 	
 	      //Internal nets
  wire sl,cl,c2;
- 
-
   //Instantiate logic gate primitives
-  
  xor(sl,a,b);
- 
  and(cl,a,b);
- 
  xor(sum,sl,cin);
- 
  and(c2,sl,cin);
- 
  or(cout,c2,cl);
- 
+
  endmodule
+```
 ![CODE](https://github.com/DHIVYA050430/FULL_ADDER_SUBTRACTOR/assets/147141546/75e152c2-4b21-4e47-8728-6c46964a8b96)
 
 **RTL Schematic**
